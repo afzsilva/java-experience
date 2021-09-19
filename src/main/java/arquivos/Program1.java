@@ -16,9 +16,12 @@ public class Program1 {
             while (sc.hasNextLine()){
                 System.out.println(sc.nextLine());
             }
-
         }catch (IOException e){
             e.printStackTrace();
+        }finally {
+            if(sc != null){
+                sc.close();
+            }
         }
 
     }
